@@ -46,7 +46,7 @@
                 <executions>
                     <execution>
                         <id>upload-jar</id>
-                        <phase>package</phase>
+                        <phase>deploy</phase>
                         <goals>
                             <goal>upload</goal>
                         </goals>
