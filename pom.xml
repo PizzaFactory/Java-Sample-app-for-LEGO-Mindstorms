@@ -65,32 +65,23 @@
         </plugins>
     </build>    
 
-    <!-- ローカル・レポジトリにインストールしたファイルへの参照
-    mvn install:install-file 
-        -Dfile=ev3classes.jar 
-        -DgroupId=ev3.classes 
-        -DartifactId=ev3classes 
-        -Dversion=0.8 -Dpackaging=jar
-    -->
+    <repositories>
+      <repository>
+        <id>github.io-PizzaFactory</id>
+        <url>http://pizzafactory.github.io/Java-Sample-app-for-LEGO-Mindstorms/m2repo</url>
+      </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>ev3.classes</groupId>
             <artifactId>ev3classes</artifactId>
-            <version>0.8.1</version>
+            <version>0.9.0-beta</version>
         </dependency>
-        
-    <!-- ローカル・レポジトリにインストールしたファイルへの参照
-    mvn install:install-file 
-        -Dfile=dbusjava.jar 
-        -DgroupId=ev3.dbus 
-        -DartifactId=dbusjava 
-        -Dversion=0.8 
-        -Dpackaging=jar
-    -->
         <dependency>
-            <groupId>ev3.dbus</groupId>
+            <groupId>ev3.classes</groupId>
             <artifactId>dbusjava</artifactId>
-            <version>0.8.1</version>
+            <version>0.9.0-beta</version>
         </dependency>
     </dependencies>
 </project>
